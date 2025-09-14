@@ -1,0 +1,41 @@
+{
+  "name": "hampom/bari-kata-functional",
+  "minimum-stability": "stable",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "anazawa yasuhiro",
+      "email": "yasuhiro@humming-code.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Hampom\\BariKataFunctional\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\": "tests"
+    }
+  },
+  "require": {
+    "php": ">=8.2",
+    "hampom/bari-kata": "0.0.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^12",
+    "dg/bypass-finals": "^1.9",
+    "carthage-software/mago": "1.0.0-beta.14"
+  },
+  "config": {
+    "allow-plugins": {
+      "carthage-software/mago": true
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "format": "mago fmt src tests"
+  },
+  "version": "0.0.1"
+}
